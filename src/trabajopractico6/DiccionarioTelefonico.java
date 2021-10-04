@@ -14,7 +14,7 @@ import java.util.TreeMap;
  * @author sant
  */
 public class DiccionarioTelefonico {
-    static TreeMap<Long, Cliente> telefonos = new TreeMap();
+    protected static TreeMap<Long, Cliente> telefonos = new TreeMap();
     
     static boolean agregarCliente(Cliente cliente, long telefono){
         if(telefonos.containsKey(telefono)){
